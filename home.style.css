@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/*
+    Developer : Yahiya Mansuri
+    Place : Indore
+    Date : 12/OCT/2021
+    important fonts
+    font-family: 'Bebas Neue', cursive; // This fonts are for headings
+    font-family: 'Barlow Condensed', sans-serif; // This fonts are for
+    color: #FF7F00 // This color codes are for orange one
+
+*/
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    /* height: 10000px; */
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.fixed-button {
+    left: 40vw;
+    bottom: 0;
+    align-self: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.fixed-button > .btn {
+    width: 300px;
+    height: 50px;
+    /* padding: 10px !important; */
+    border-radius: 0px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+}
+
+.fixed-button > .btn:hover {
+    border-radius: 0px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+}
+
+
+
+.form-control {
+    border: 1px #FF7F00;
+}
+
+.form-control:focus {
+    outline:  none;
+    box-shadow: none;
+}
+
+.form-control {
+    border: 1px solid #FF7F00 !important;
+}
+/* icons styles
+    
+*/
+
+.fab {
+    font-size: 25px;
+    color:#FF7F00 ;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: #FF7F00 !important;
+}
+
+.button-common {
+    margin-top: 10px !important;
+    border-color: #FF7F00;
+    color: #FF7F00;
+    border-radius: 0px;
+}
+
+.button-common:hover {
+    background-color: #FF7F00;
+    color: white;
+}
+
+header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.homepage-banner-container {
+    position: relative;
+    margin-top: 100px;
+}
+
+.homepage-banner-container > img {
+    height: 85vh;
+    width: 100vw;
+}
+
+.homepage-banner-data {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    border: red;
+}
+
+ .banner-child-1 {
+  color: #000000;
+  margin: 50px;
+  width: 50%;
+}
+
+.banner-child-2 {
+    padding: 20px;
+    width: 50%;
+} 
+
+.homepage-banner-button {
+    padding: 10px;
+    background-color: #FF7F00;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 250px;
+    color: white;
+    border: #FF7F00;
+    font-size: 20px;
+    display: none;
+}
+
+.homepage-banner-button:hover {
+    padding: 10px;
+    background-color: white;
+    color: #FF7F00;
+}
+
+.heading-text  {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: white;
+    color: #FF7F00;
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid #FF7F00;
+}
+
+.submit-button:hover {
+    background-color: #FF7F00;
+    color: white;
+    
+}
+
+.homepage-item-container {
+    height: auto;
+}
+
+.homepage-item-heading-text {
+    font-size: 45px;
+    color: #FF7F00;
+    cursor: pointer;
+}
+
+.homepage-item-quote-text {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Ephesis', cursive;
+}
+
+.homepage-item-quote-text:hover {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FF7F00;
+}
+
+.homepage-item-description-text {
+    font-size: 30px;
+}
+
+.project-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-flex-child {
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid #FF7F00; */
+    margin: 10px;
+}
+
+.project-flex-child > img {
+    border: 1px sold #FF7F00;
+}
+
+.how-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.how-flex-child {
+    color: #FF7F00;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #FF7F00;
+    margin: 10px;
+}
+
+.how-flex-child:hover {
+    background-color: #FF7F00;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+
+    .fixed-button {
+        display: none;
+    }
+    .button-common {
+        float: left !important;
+        margin-top: 0px !important;
+    }
+
+    .banner-child-1 {
+        margin: 0px !important;
+        width: 100%;
+    }
+    .banner-child-2 {
+        display: none;
+    }
+
+    .homepage-banner-button {
+        display: block;
+        width: 200px;
+    }
+    .homepage-item-heading-text {
+        font-size: 35px;
+        color: #FF7F00;
+        cursor: pointer;
+    }
+    
+    .homepage-item-quote-text {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .homepage-item-quote-text:hover {
+        font-weight: bold;
+        font-size: 25px;
+        color: #FF7F00;
+    }
+    
+    .homepage-item-description-text {
+        font-size: 15px;
+    }
+   
+    /* .project-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .project-flex-child {
+        margin-top: 10px;
+    }
+}
